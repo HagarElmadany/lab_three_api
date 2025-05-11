@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "3740daa8-c90a-481b-9540-9677464d463d",
+		"name": "Rails_lab_three_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33067868"
+	},
+	"item": [
+		{
+			"name": "all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://solid-space-adventure-4576q64wwv6f79rj-3000.app.github.dev/posts",
+					"protocol": "https",
+					"host": [
+						"solid-space-adventure-4576q64wwv6f79rj-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Post one 1\",\r\n  \"content\": \"This is post one 1.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://solid-space-adventure-4576q64wwv6f79rj-3000.app.github.dev/posts",
+					"protocol": "https",
+					"host": [
+						"solid-space-adventure-4576q64wwv6f79rj-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://solid-space-adventure-4576q64wwv6f79rj-3000.app.github.dev/posts/1",
+					"protocol": "https",
+					"host": [
+						"solid-space-adventure-4576q64wwv6f79rj-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"post one Updated\",\r\n  \"content\": \"this is post one Updated\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://solid-space-adventure-4576q64wwv6f79rj-3000.app.github.dev/posts/1",
+					"protocol": "https",
+					"host": [
+						"solid-space-adventure-4576q64wwv6f79rj-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delate post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://solid-space-adventure-4576q64wwv6f79rj-3000.app.github.dev/posts/1",
+					"protocol": "https",
+					"host": [
+						"solid-space-adventure-4576q64wwv6f79rj-3000",
+						"app",
+						"github",
+						"dev"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
